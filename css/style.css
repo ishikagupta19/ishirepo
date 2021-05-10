@@ -1,0 +1,243 @@
+*{
+    margin: 0; padding: 0; font-family: 'Poiret One', cursive;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#fff, #f8f6b5);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.navsection{
+    width: 100%;
+    height: 20vh; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, #ffffff 80%,  rgb(250, 251, 202) 20%);
+}
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(85, 135, 173);
+    font-weight: 900;
+    font-size: 20px;
+    position: relative;
+}
+nav a:first-child{
+    color: rgb(135, 97, 0);
+}
+nav a:last-child{
+    color:rgb(135, 97, 0) ;
+}
+nav a:before{
+    content: " ";
+    position: absolute;
+    top:110%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #202400;
+    transition: all 0.5s linear;
+}
+nav a:hover:before{
+width: 100%;
+}
+
+.logo{
+    width: 40%; height: 25%;
+    background-image: linear-gradient(#e2d4a2 40%, #d6c41f 60%);
+    padding-left: 110px;
+    box-sizing: border-box;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    animation: kuchbhi 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes kuchbhi{
+    from{
+        padding-left: 40px;
+    }
+    to{
+        padding-right: 40px;
+    }
+}
+
+.navsection .menubttn{
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight: 900;
+    background-color:rgb(185, 183, 53);
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 50px;
+    color: #000;
+    letter-spacing: 0;
+    background-image: linear-gradient(to right, #cadc44 0%, #eed94f 100%);
+    border: double 1px transparent;
+    box-shadow: 0 10px 20px rgb(185, 183, 53);
+}
+.menubttn:hover{
+    border: 2px solid #f0f696;
+    color:rgb(0, 0, 0);
+    background-image: none;
+    box-shadow: none;
+    background-color:khaki;
+    
+}
+main{
+    width: 100%; height: 70vh;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightside{
+    border-radius: 41% 59% 43% 57% / 72% 30% 70% 28%  ;
+    background-color: rgb(255, 246, 190);
+}
+main .rightside{
+    padding-right: 10px;
+}
+main .left-sec{
+    padding-left: 100px;
+    padding-top: 120px;
+}
+.leftside h3{
+    font-size: 40px;
+    color:rgb(68, 50, 5);
+    padding-left: 25px;
+    margin-bottom: 20px;
+    
+}
+
+.leftside h2{
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-transform: capitalize;
+    color:rgb(56, 53, 53);
+    padding-left: 25px;
+    position: relative;
+ }
+ .leftside h2:after {
+    content: " ";
+    width: 450px;
+    height: 3px;
+    position: absolute;
+    top: 75%;
+    left: 58%;
+    background-color: #000;
+}
+.leftside h1{
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    color: rgb(49, 63, 62);
+    padding-left: 25px;
+}
+.leftside p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+}
+.leftside .btn2{
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 900;
+    background-color:rgb(185, 183, 53);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 50px;
+    color: #000;
+    letter-spacing: 0;
+    background-image: linear-gradient(to right, #cadc44 0%, #eed94f 100%);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgb(185, 183, 53);
+
+}
+.btn2:hover{
+    border: 2px solid #f0f696;
+    color:rgb(0, 0, 0);
+    background-image: none;
+    box-shadow: none;
+    background-color:khaki;
+    
+}
+.leftside .btn1{
+           padding: 15px 25px;
+           text-align: center;
+           font-size: 20px;
+           margin-left: 20px;
+           border: none;
+           cursor: pointer;
+           font-weight: 900;
+           background-color:rgb(185, 183, 53);
+           border-radius: 5px;
+           text-decoration: none;
+           text-transform: uppercase;
+           display: inline-block;
+           margin-right: 50px;
+           color: #000;
+           letter-spacing: 0;
+           background-image: linear-gradient(to right, #cadc44 0%, #eed94f 100%);
+           border: double 2px transparent;
+           box-shadow: 0 10px 30px rgb(185, 183, 53);
+
+}
+.btn1:hover{
+    border: 2px solid #f0f696;
+    color:rgb(0, 0, 0);
+    background-image: none;
+    box-shadow: none;
+    background-color:khaki;
+    
+}
+.leftside .btn2{
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 900;
+    background-color:rgb(185, 183, 53);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 50px;
+    color: #000;
+    letter-spacing: 0;
+    background-image: linear-gradient(to right, #cadc44 0%, #eed94f 100%);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgb(185, 183, 53);
+
+}
+.btn2:hover{
+    border: 2px solid #f0f696;
+    color:rgb(0, 0, 0);
+    background-image: none;
+    box-shadow: none;
+    background-color:khaki;
+    
+}
